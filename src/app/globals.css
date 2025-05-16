@@ -32,3 +32,15 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+.react-calendar{
+  width: 100% !important; 
+  border: none !important;
+  font-family: "inter", sans-serif !important;
+}
+.react-calendar__tile--active{
+  color:  black !important;
+  background-color: #c3ebfa !important;
+}
+.react-calendar__navigation__label__labelText{
+  font-weight: 600 !important;
+}
