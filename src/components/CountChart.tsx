@@ -31,7 +31,7 @@ const CountChart = () => {
     <div className='bg-white rounded-xl w-full h-full p-4'>
       {/* TITLE */}
       <div className='flex justify-between items-center mb-4'>
-        <h1 className='text-lg font-semibold'>Students</h1>
+        <h1 className='text-lg font-semibold text-gray-700'>Students</h1>
         <Image src='/moreDark.png' alt='More' width={20} height={20} />
       </div>
 

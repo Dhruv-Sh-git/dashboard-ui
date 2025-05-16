@@ -1,6 +1,7 @@
 import UserCard from "@/components/UserCard"
 import CountChart from "@/components/CountChart"
 import AttendanceChart from "../../../components/AttendanceChart"
+import FinanceChart from "@/components/FinanceChart"
 const AdminPage = () => {
   return (
     <div className='p-4 flex gap-4 flex-col md:flex-row'>
@@ -28,7 +29,9 @@ const AdminPage = () => {
       </div>
     </div>
     {/* BOTTOM CHART */}
-    <div className="w-full "></div>
+    <div className="w-full h-[500px]">
+      <FinanceChart />
+    </div>
     </div>
 {/*RIGHT*/}
     <div className="w-full lg:w-1/3"></div>
