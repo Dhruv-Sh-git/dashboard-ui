@@ -121,7 +121,7 @@ export const teachersData = [
       "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     subjects: ["Biology"],
-    classes: ["5A", "4B", "3C"],
+    classes: ["5A", "4A", "3C"],
     address: "123 Main St, Anytown, USA",
   },
 ];
@@ -409,7 +409,7 @@ export const classesData = [
   },
   {
     id: 4,
-    name: "4B",
+    name: "4A",
     capacity: 18,
     grade: 4,
     supervisor: "Aaron Collins",
