@@ -1,6 +1,6 @@
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalendar";
-// import FormModal from "@/components/FormModal";
+import FormModal from "@/components/FormModal";
 import Performance from "@/components/Performance";
 import { role } from "@/lib/data";
 import Image from "next/image";
@@ -27,8 +27,10 @@ const SingleStudentPage = () => {
               />
             </div>
             <div className="w-2/3 flex flex-col justify-between gap-4">
-              
+              <div className="flex items-center gap-4">
                 <h1 className="text-xl font-semibold">Lorem</h1>
+                <FormModal table="student" type="update"/>
+                </div>
               <p className="text-sm text-gray-500">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               </p>

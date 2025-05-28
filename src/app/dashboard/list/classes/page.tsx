@@ -5,6 +5,7 @@ import TableSearch from "@/components/TableSearch";
 import { classesData, role } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
+import FormModal from "@/components/FormModal";
 
 type Class = {
   id: number;
@@ -54,15 +55,8 @@ const ClassListPage = () => {
         <div className="flex items-center gap-2">
           {role === "admin" && (
             <>
-              <Link href={`/list/teachers/${item.id}`}>
-                          <button className="w-7 h-7 flex items-center justify-center rounded-full bg-blue-50">
-                            <Image src="/view.png" alt="" width={16} height={16} />
-                          </button>
-                        </Link>
-                        
-                          <button className="w-7 h-7 flex items-center justify-center rounded-full bg-purple-50">
-                          <Image src="/delete.png" alt="" width={16} height={16} />
-                          </button>
+              <FormModal table="class" type="update" data={item} />
+              <FormModal table="class" type="delete" id={item.id} />
             </>
           )}
         </div>
@@ -84,11 +78,7 @@ const ClassListPage = () => {
             <button className="w-8 h-8 flex items-center justify-center rounded-full bg-yellow-100">
               <Image src="/sort.png" alt="" width={14} height={14} />
             </button>
-            {role==="admin" && (
-                                        <button className="w-8 h-8 flex items-center justify-center rounded-full bg-yellow-100">
-                                        <Image src="/plus.png" alt="" width={14} height={14} />
-                                        </button>
-                                        )}
+            {role === "admin" && <FormModal table="class" type="create" />}
           </div>
         </div>
       </div>

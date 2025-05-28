@@ -1,6 +1,6 @@
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalendar";
-// import FormModal from "@/components/FormModal";
+import FormModal from "@/components/FormModal";
 import Performance from "@/components/Performance";
 import { role } from "@/lib/data";
 import Image from "next/image";
@@ -16,8 +16,9 @@ const SingleTeacherPage = () => {
         {/* TOP */}
         <div className="flex flex-col lg:flex-row gap-4">
           {/* USER INFO CARD */}
-          <div className="bg-blue-50 py-6 px-4 rounded-md flex flex-1 gap-4">
+          <div className="bg-blue-100 py-6 px-4 rounded-md flex flex-1 gap-4">
             <div className="w-1/3">
+            
               <Image
                 src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt=""
@@ -27,8 +28,10 @@ const SingleTeacherPage = () => {
               />
             </div>
             <div className="w-2/3 flex flex-col justify-between gap-4">
-              
+            <div className="flex items-center gap-4">
                 <h1 className="text-xl font-semibold">Dhruv Shaswat</h1>
+                <FormModal table="teacher" type="update"/>
+                </div>
               <p className="text-sm text-gray-500">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               </p>
@@ -48,6 +51,7 @@ const SingleTeacherPage = () => {
                 <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
                   <Image src="/phone.png" alt="" width={14} height={14} />
                   <span>+1 234 567</span>
+                  
                 </div>
               </div>
             </div>
